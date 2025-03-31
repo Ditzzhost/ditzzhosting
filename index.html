@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelian</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="purchase-box">
+            <h2>Pembelian</h2>
+            <form onsubmit="sendToWhatsApp(); return false;">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required><label for="product">Produk</label>
+            <select id="product" name="product" required>
+                <option value="">Produk</option>
+                <option value="Produk A">Produk A</option>
+                <option value="Produk B">Produk B</option>
+                <option value="Produk C">Produk C</option>
+                <option value="Produk D">Produk D</option>
+            </select>
+            
+            <label for="payment">Payment</label>
+            <select id="payment" name="payment" required>
+                <option value="">Payment</option>
+                <option value="082127350608">Dana</option>
+                <option value="085860632325">Ovo</option>
+                <option value="085860632325">Gopay</option>
+                <option value="">Qris</option>  
+            </select>
+            
+            <label for="customText">Deskripsi</label>
+            <textarea id="customText" name="customText" placeholder="Tambahkan teks kustom Anda di sini" rows="4" required></textarea>
+            
+            <button type="submit">Kirim ke WhatsApp</button>
+        </form>
+      <label class="switch">
+        <input type="checkbox" onchange="toggleTheme()">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+<script src="script.js"></script>
+
+</body>
+</html>
